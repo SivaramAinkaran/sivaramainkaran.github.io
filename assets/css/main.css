@@ -704,9 +704,39 @@ input, select, textarea {
 				width: 100%;
 			}
 
+		.image.projects {
+			display: block;
+			margin-top: -1em;
+			background-color: transparent;
+			width: 80%;
+		}
+
+			.image.projects img {
+				width: 80%;
+			}
+
+			.image.projects:before {
+			pointer-events: none;
+			background-image: url("../../images/overlay.png");
+			background-color: transparent;
+			border-radius: 4px;
+			content: '';
+			display: block;
+			height: 100%;
+			left: 0;
+			opacity: 0.5;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+
 		@media screen and (max-width: 736px) {
 
 			.image.main {
+				margin: 2rem 0;
+			}
+			.image.projects {
 				margin: 2rem 0;
 			}
 
@@ -715,6 +745,9 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			.image.main {
+				margin: 1.5rem 0;
+			}
+			.image.projects {
 				margin: 1.5rem 0;
 			}
 
