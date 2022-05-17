@@ -997,7 +997,17 @@ input, select, textarea {
 			}
 
 /* Button */
+	ul.buttons {
+		list-style: disc;
+		margin-left: -0.5em;
+		margin-bottom: -0.5em;
+		padding: 0;
+	}
 
+		ul.buttons li {
+			display: inline-block;
+		}
+	
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
@@ -1072,7 +1082,7 @@ input, select, textarea {
 			height: 2.0625rem;
 			line-height: 2.0625rem;
 		}
-
+		
 		input[type="submit"].primary,
 		input[type="reset"].primary,
 		input[type="button"].primary,
@@ -1082,6 +1092,117 @@ input, select, textarea {
 			color: #1b1f22 !important;
 			font-weight: 600;
 		}
+
+		
+		input[type="submit"].github,
+		input[type="reset"].github,
+		input[type="button"].github,
+		button.github,
+		.button.github {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		background-color: #ffffff;
+		border-radius: 4px;
+		border: 0.8px;
+		box-shadow: inset 0 0 0 1px #ffffff;
+		color: #000000 !important;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 0.8rem;
+		font-weight: 600;
+		height: 2.75rem;
+		letter-spacing: 0.2rem;
+		line-height: 1.25rem;
+		outline: 0;
+		margin:0;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		white-space: nowrap;
+		height: 1.25rem;
+		padding: 0 0.25rem 0 0.25rem;
+	}
+
+		input[type="submit"]:hover,
+		input[type="reset"]:hover,
+		input[type="button"]:hover,
+		button.github:hover,
+		.button.github:hover {
+			color: white !important;
+			background-color: #000000;
+			font-weight: 600;
+		}
+
+		input[type="submit"]:active,
+		input[type="reset"]:active,
+		input[type="button"]:active,
+		button.github:active,
+		.button.github:active {
+			color: #cf4503;
+			background-color: rgba(255, 255, 255, 0.175);
+		}
+
+		input[type="submit"].kaggle,
+		input[type="reset"].kaggle,
+		input[type="button"].kaggle,
+		button.kaggle,
+		.button.kaggle {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		background-color: #20BEFF;
+		border-radius: 4px;
+		border: 0.8px;
+		box-shadow: inset 0 0 0 1px #20BEFF;
+		color: #000000 !important;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 0.8rem;
+		font-weight: 600;
+		height: 2.75rem;
+		letter-spacing: 0.2rem;
+		line-height: 1.25rem;
+		outline: 0;
+		margin:0;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		white-space: nowrap;
+		height: 1.25rem;
+		padding: 0 0.25rem 0 0.25rem;
+	}
+
+		input[type="submit"]:hover,
+		input[type="reset"]:hover,
+		input[type="button"]:hover,
+		button.kaggle:hover,
+		.button.kaggle:hover {
+			color: #20BEFF !important;
+			background-color: #000000;
+			font-weight: 600;
+		}
+
+		input[type="submit"]:active,
+		input[type="reset"]:active,
+		input[type="button"]:active,
+		button.kaggle:active,
+		.button.kaggle:active {
+			color: #cf4503;
+			background-color: rgba(255, 255, 255, 0.175);
+		}
+			
+		
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
 		input[type="reset"].disabled,
@@ -1140,9 +1261,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
