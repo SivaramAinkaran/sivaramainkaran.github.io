@@ -706,28 +706,57 @@ input, select, textarea {
 
 		.image.projects {
 			display: block;
-			margin-top: -1em;
+			margin-top: -2em;
+			margin-bottom: 2em;
 			background-color: transparent;
 			width: 80%;
 		}
 
 			.image.projects img {
+				display: inline-block;
 				width: 80%;
 			}
-
-			.image.projects:before {
+	
+		.image.projects:before {
 			pointer-events: none;
 			background-image: url("../../images/overlay.png");
 			background-color: transparent;
 			border-radius: 4px;
 			content: '';
 			display: block;
-			height: 100%;
+			height: 80%;
 			left: 0;
 			opacity: 0.5;
 			position: absolute;
 			top: 0;
-			width: 100%;
+			width: 80%;
+		}
+	
+		.image.lgprojects {
+			display: block;
+			margin-top: -2em;
+			margin-bottom: 2em;
+			background-color: transparent;
+			width: 90%;
+		}
+
+			.image.lgprojects img {
+				width: 90%;
+			}
+
+			.image.lgprojects:before {
+			pointer-events: none;
+			background-image: url("../../images/overlay.png");
+			background-color: transparent;
+			border-radius: 4px;
+			content: '';
+			display: block;
+			height: 90%;
+			left: 0;
+			opacity: 0.5;
+			position: absolute;
+			top: 0;
+			width: 90%;
 		}
 
 
@@ -1234,7 +1263,168 @@ input, select, textarea {
 			color: #cf4503;
 			background-color: rgba(255, 255, 255, 0.175);
 		}
-			
+
+		input[type="submit"].shiny,
+		input[type="reset"].shiny,
+		input[type="button"].shiny,
+		button.shiny,
+		.button.shiny {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		background-color: #34495E;
+		border-radius: 4px;
+		border: 0.8px;
+		box-shadow: inset 0 0 0 1px #34495E;
+		color: #ffffff !important;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 0.8rem;
+		font-weight: 600;
+		height: 2.75rem;
+		letter-spacing: 0.2rem;
+		line-height: 1.25rem;
+		outline: 0;
+		margin:0;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		white-space: nowrap;
+		height: 1.25rem;
+		padding: 0 0.25rem 0 0.25rem;
+	}
+
+		input[type="submit"]:hover,
+		input[type="reset"]:hover,
+		input[type="button"]:hover,
+		button.shiny:hover,
+		.button.shiny:hover {
+			color: #34495E !important;
+			background-color: #ffffff;
+			font-weight: 600;
+		}
+
+		input[type="submit"]:active,
+		input[type="reset"]:active,
+		input[type="button"]:active,
+		button.shiny:active,
+		.button.shiny:active {
+			color: #34495E;
+			background-color: rgba(255, 255, 255, 0.175);
+		}
+		
+		input[type="submit"].pdf,
+		input[type="reset"].pdf,
+		input[type="button"].pdf,
+		button.pdf,
+		.button.pdf {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		background-color: #AA0A00;
+		border-radius: 4px;
+		border: 0.8px;
+		box-shadow: inset 0 0 0 1px #AA0A00;
+		color: #ffffff!important;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 0.8rem;
+		font-weight: 600;
+		height: 2.75rem;
+		letter-spacing: 0.2rem;
+		line-height: 1.25rem;
+		outline: 0;
+		margin:0;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		white-space: nowrap;
+		height: 1.25rem;
+		padding: 0 0.25rem 0 0.25rem;
+	}
+
+		input[type="submit"]:hover,
+		input[type="reset"]:hover,
+		input[type="button"]:hover,
+		button.pdf:hover,
+		.button.pdf:hover {
+			color: #AA0A00 !important;
+			background-color: #ffffff;
+			font-weight: 600;
+		}
+
+		input[type="submit"]:active,
+		input[type="reset"]:active,
+		input[type="button"]:active,
+		button.kaggle:active,
+		.button.kaggle:active {
+			color: #AA0A00;
+			background-color: rgba(255, 255, 255, 0.175);
+		}
+
+		input[type="submit"].excel,
+		input[type="reset"].excel,
+		input[type="button"].excel,
+		button.excel,
+		.button.excel {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		background-color: #34A853;
+		border-radius: 4px;
+		border: 0.8px;
+		box-shadow: inset 0 0 0 1px #34A853;
+		color: #ffffff!important;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 0.8rem;
+		font-weight: 600;
+		height: 2.75rem;
+		letter-spacing: 0.2rem;
+		line-height: 1.25rem;
+		outline: 0;
+		margin:0;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		white-space: nowrap;
+		height: 1.25rem;
+		padding: 0 0.25rem 0 0.25rem;
+	}
+
+		input[type="submit"]:hover,
+		input[type="reset"]:hover,
+		input[type="button"]:hover,
+		button.excel:hover,
+		.button.excel:hover {
+			color: #34A853 !important;
+			background-color: #ffffff;
+			font-weight: 600;
+		}
+
+		input[type="submit"]:active,
+		input[type="reset"]:active,
+		input[type="button"]:active,
+		button.kaggle:active,
+		.button.kaggle:active {
+			color: #34A853;
+			background-color: rgba(255, 255, 255, 0.175);
+		}
 		
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
