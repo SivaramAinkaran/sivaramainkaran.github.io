@@ -664,20 +664,62 @@ input, select, textarea {
 			display: block;
 		}
 
-		.image.left, .image.right {
+		.image.left, .image.right, .image.leftbot {
 			max-width: 40%;
 		}
 
-			.image.left img, .image.right img {
+			.image.left img, .image.right img, .image.leftbot img {
+				border: 2px solid transparent;
 				width: 100%;
 			}
 
+			
+
 		.image.left {
 			float: left;
-			padding: 0 1.5em 1em 0;
-			top: 0.25em;
+			padding-left: 0 0 0 0;
+			margin-top: -2em;
+			display: block;
+
 		}
 
+		.image.left:before {
+			pointer-events: none;
+			background-image: url("../../images/overlay.png");
+			background-color: transparent;
+			border-radius: 4px;
+			content: '';
+			display: block;
+			height: 80%;
+			left: 0;
+			opacity: 0.5;
+			position: absolute;
+			top: 0;
+			width: 80%;
+		}
+		
+		.image.leftbot {
+			display: block;
+			float: left;
+			padding: 0 0 0 0;
+			margin-bottom: 2em;
+
+		}
+
+		.image.leftbot:before {
+			pointer-events: none;
+			background-image: url("../../images/overlay.png");
+			background-color: transparent;
+			border-radius: 4px;
+			content: '';
+			height: 80%;
+			left: 0;
+			opacity: 0.5;
+			position: absolute;
+			top: 0;
+			width: 80%;
+		}
+		
 		.image.right {
 			float: right;
 			padding: 0 0 1em 1.5em;
