@@ -1750,6 +1750,7 @@ input, select, textarea {
 		background-image: radial-gradient(rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 55%);
 		max-width: 100%;
 		text-align: center;
+margin:50px;
 	}
 
 		#header > * {
@@ -1900,6 +1901,7 @@ input, select, textarea {
 				width: 2.25rem;
 
 				}
+				
 
 					#header soc ul.social li a:hover {
 						background-color: rgba(255, 255, 255, 0.075);
@@ -1908,7 +1910,8 @@ input, select, textarea {
 					#header nav ul.social li a:active {
 						background-color: rgba(255, 255, 255, 0.175);
 					}
-		soc p{margin:-5em 0 -3em 0;
+		soc p{display:inline:block;
+			margin:-30px;
 			padding:0 10px 0 0;
 		}
 
